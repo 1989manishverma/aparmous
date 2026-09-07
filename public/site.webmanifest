@@ -1,0 +1,20 @@
+{
+  "name": "Jashn Golf Estate",
+  "short_name": "Golf Estate",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0c2a22",
+  "background_color": "#0c2a22",
+  "display": "standalone"
+}
