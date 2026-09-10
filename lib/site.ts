@@ -1,6 +1,6 @@
 export const SITE = {
   name: "Jashn Golf Estate",
-  title: "Jashn Golf Estate — Six Scroll Editorial Reveal",
+  title: "Jashn Golf Estate Lucknow | Luxury 3,4 & 5 BHK Homes in Sushant Golf City",
   description:
     "Jashn Golf Estate — private residential living at Sushant Golf City, Lucknow.",
   phoneDisplay: "+91 81277 77274",
