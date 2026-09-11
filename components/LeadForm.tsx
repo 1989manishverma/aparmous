@@ -121,7 +121,10 @@ export function LeadForm({
       )}
       <label className="consent">
         <input type="checkbox" name="consent" value="yes" required />
-        <span>I agree to be contacted about Jashn Golf Estate.</span>
+        <span>
+          I agree to be contacted about Jashn Golf Estate.{" "}
+          <a href="/privacy">Privacy Policy</a>
+        </span>
       </label>
       <button className="btn dark" type="submit" disabled={sending}>
         {sending ? "Sending…" : submitLabel}

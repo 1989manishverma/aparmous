@@ -40,6 +40,9 @@ export function FinalScreen() {
             includeEmail={false}
           />
         </Reveal>
+        <p className="mobile-privacy-link">
+          <a href="/privacy">Privacy Policy</a>
+        </p>
       </div>
       <footer className="final-footer shell">
         <span>Jashn Golf Estate · Sushant Golf City, Lucknow</span>
@@ -47,7 +50,8 @@ export function FinalScreen() {
           <a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a> ·{" "}
           <a href={SITE.whatsappUrl} target="_blank" rel="noopener">
             WhatsApp
-          </a>
+          </a>{" "}
+          · <a href="/privacy">Privacy Policy</a>
         </span>
       </footer>
     </section>
