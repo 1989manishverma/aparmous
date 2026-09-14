@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Jashn Golf Estate",
   description:
     "How Aparamous Solutions Pvt. Ltd. collects and uses information on the Jashn Golf Estate website.",
+  alternates: {
+    canonical: "/privacy",
+  },
 };
 
 export default function PrivacyPage() {
@@ -13,7 +16,7 @@ export default function PrivacyPage() {
       <header className="legal-topbar">
         <div className="shell">
           <a className="brand-logo" href="/" aria-label="Jashn Golf Estate home">
-            <img src="/img/jashn-logo-official.png" alt="Jashn Golf Estate" />
+            <img src="/img/jashn-logo-official.png" alt="Jashn Golf Estate Lucknow logo" title="Jashn Golf Estate" />
           </a>
           <a className="ghost-btn" href="/">
             Back to estate

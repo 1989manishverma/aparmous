@@ -9,27 +9,27 @@ const HERO_SLIDES = [
   {
     src: img("PDFp023_IMG015_3271x1741.webp"),
     mobile: img("PDFp023_IMG015_3271x1741-960.webp"),
-    alt: "Landscaped water and residences at Jashn Golf Estate",
+    alt: "Jashn Golf Estate Lucknow landscaped water and luxury residences in Sushant Golf City",
   },
   {
     src: img("PDFp018_IMG010_3271x1741.webp"),
     mobile: img("PDFp018_IMG010_3271x1741-960.webp"),
-    alt: "Floating paddle court",
+    alt: "Floating paddle court at Jashn Golf Estate, Sushant Golf City Lucknow",
   },
   {
     src: img("PDFp022_IMG014_2665x1421.webp"),
     mobile: img("PDFp022_IMG014_2665x1421-960.webp"),
-    alt: "Three-level clubhouse exterior",
+    alt: "Three-level clubhouse exterior at Jashn Golf Estate Lucknow",
   },
   {
     src: img("PDFp077_IMG097_3270x1742.webp"),
     mobile: img("PDFp077_IMG097_3270x1742-960.webp"),
-    alt: "Sky Lounge jacuzzi terrace",
+    alt: "Sky Lounge jacuzzi terrace at Jashn Golf Estate luxury homes",
   },
   {
     src: img("PDFp085_IMG111_1613x1741.webp"),
     mobile: img("PDFp085_IMG111_1613x1741-960.webp"),
-    alt: "Double-height Sky Villa living room",
+    alt: "Double-height Sky Villa living room at Jashn Golf Estate Lucknow",
   },
 ];
 
@@ -50,7 +50,7 @@ export function Hero({
             <figure key={slide.src} className={i === index ? "hero-slide is-active" : "hero-slide"}>
               <picture>
                 <source media="(max-width:700px)" srcSet={slide.mobile} />
-                <img src={slide.src} alt={slide.alt} />
+                <img src={slide.src} alt={slide.alt} title={slide.alt} />
               </picture>
             </figure>
           ))}
@@ -59,13 +59,14 @@ export function Hero({
       <div className="hero-content shell">
         <div className="hero-copy">
           <div className="hero-brandmark">
-            <img src="/img/jashn-logo-official.png" alt="Jashn Golf Estate" />
+            <img src="/img/jashn-logo-official.png" alt="Jashn Golf Estate Lucknow" title="Jashn Golf Estate" />
           </div>
           <p className="eyebrow">Sushant Golf City · Lucknow</p>
-          <h1>Life, on the greens.</h1>
+          <h1>Life, on the greens at Jashn Golf Estate.</h1>
           <p className="hero-sub">
-            A private residential estate shaped around landscape, leisure and a different rhythm of
-            living.
+            <strong>Jashn Golf Estate</strong> in Sushant Golf City, Lucknow offers{" "}
+            <strong>luxury 3, 4 and 5 BHK homes</strong> in a private residential estate shaped around
+            landscape, leisure and a different rhythm of living.
           </p>
           <div className="hero-actions">
             <button className="btn light" type="button" onClick={() => openLead("hero")}>

@@ -10,8 +10,8 @@ export function Header({ isSolid }: { isSolid: boolean }) {
   return (
     <header className={isSolid ? "topbar is-solid" : "topbar"}>
       <div className="shell">
-        <a className="brand-logo" href="#top" aria-label="Jashn Golf Estate home">
-          <img src="/img/jashn-logo-official.png" alt="Jashn Golf Estate" />
+        <a className="brand-logo" href="/#top" aria-label="Jashn Golf Estate home">
+          <img src="/img/jashn-logo-official.png" alt="Jashn Golf Estate Lucknow logo" title="Jashn Golf Estate" />
         </a>
         <div className="top-actions">
           <a className="contact-phone" href={`tel:${SITE.phoneTel}`} aria-label={`Call ${SITE.phoneDisplay}`}>

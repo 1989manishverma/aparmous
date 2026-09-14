@@ -8,15 +8,16 @@ export function FinalScreen() {
   return (
     <section className="screen final-screen" id="interest">
       <div className="final-media">
-        <img src={img("PDFp097_IMG128_3114x830.webp")} alt="Penthouse living and dining panorama" />
+        <img src={img("PDFp097_IMG128_3114x830.webp")} alt="Penthouse living and dining panorama at Jashn Golf Estate Lucknow" title="Penthouse at Jashn Golf Estate" />
       </div>
       <div className="desktop-only shell final-layout">
         <Reveal className="final-copy">
           <p className="eyebrow">THE PRIVATE PRESENTATION</p>
-          <h2>We have shown only part of the story.</h2>
+          <h2>Request details for Jashn Golf Estate.</h2>
           <p>
-            Request project details, residence configurations and a focused conversation around what
-            interests you.
+            We have shown only part of these <strong>luxury 3, 4 and 5 BHK homes</strong> in Sushant
+            Golf City, Lucknow. Request project details, residence configurations and a focused
+            conversation. Read our <a href="/privacy">Privacy Policy</a>.
           </p>
         </Reveal>
         <Reveal>

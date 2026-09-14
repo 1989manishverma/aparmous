@@ -86,7 +86,7 @@ export function MobileCarousel({
             .filter(Boolean)
             .join(" ")}
         >
-          <img src={item.src} alt={item.alt} />
+          <img src={item.src} alt={item.alt} title={item.alt} />
           {item.caption ? <figcaption>{item.caption}</figcaption> : null}
         </figure>
       ))}

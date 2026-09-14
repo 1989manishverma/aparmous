@@ -1,11 +1,37 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { SITE } from "@/lib/site";
+import { SITE, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: SITE.title,
   description: SITE.description,
+  keywords: [
+    "Jashn Golf Estate",
+    "Jashn Golf Estate Lucknow",
+    "luxury 3 BHK homes Lucknow",
+    "luxury 4 BHK flats in Lucknow",
+    "5 BHK homes Sushant Golf City",
+    "Sushant Golf City",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    title: SITE.title,
+    description: SITE.description,
+    siteName: SITE.name,
+    images: [{ url: SITE.ogImage, alt: SITE.name }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE.title,
+    description: SITE.description,
+    images: [SITE.ogImage],
+  },
   manifest: "/site.webmanifest",
   icons: {
     icon: [
