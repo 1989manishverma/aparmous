@@ -22,3 +22,12 @@ export const INTEREST_OPTIONS = [
 ] as const;
 
 export const img = (file: string) => `/img/${file}`;
+
+export const GOOGLE_ADS_ID = "AW-710234943";
+export const GOOGLE_ADS_LEAD_CONVERSION = "AW-710234943/AyxTCKm_7fgcEL-m1dIC";
+
+export function trackLeadConversion() {
+  if (typeof window === "undefined") return;
+  const gtag = (window as Window & { gtag?: (...args: unknown[]) => void }).gtag;
+  gtag?.("event", "conversion", { send_to: GOOGLE_ADS_LEAD_CONVERSION });
+}

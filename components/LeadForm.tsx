@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { INTEREST_OPTIONS } from "@/lib/site";
+import { INTEREST_OPTIONS, trackLeadConversion } from "@/lib/site";
 
 type LeadFormProps = {
   source: string;
@@ -46,6 +46,7 @@ export function LeadForm({
         body: JSON.stringify(payload),
       });
       if (!res.ok) throw new Error("Endpoint rejected request");
+      trackLeadConversion();
       form.reset();
       setStatus({
         kind: "ok",
