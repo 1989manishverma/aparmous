@@ -25,6 +25,7 @@ export const img = (file: string) => `/img/${file}`;
 
 export const GOOGLE_ADS_ID = "AW-710234943";
 export const GOOGLE_ADS_LEAD_CONVERSION = "AW-710234943/AyxTCKm_7fgcEL-m1dIC";
+export const GOOGLE_ANALYTICS_ID = "G-94V0Q4986E";
 
 export function trackLeadConversion() {
   if (typeof window === "undefined") return;

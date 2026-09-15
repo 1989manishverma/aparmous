@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { SITE, SITE_URL, GOOGLE_ADS_ID } from "@/lib/site";
+import { SITE, SITE_URL, GOOGLE_ADS_ID, GOOGLE_ANALYTICS_ID } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -73,7 +73,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${GOOGLE_ADS_ID}');`}
+gtag('config', '${GOOGLE_ADS_ID}');
+gtag('config', '${GOOGLE_ANALYTICS_ID}');`}
         </Script>
       </head>
       <body>
